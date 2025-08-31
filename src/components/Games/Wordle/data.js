@@ -1,0 +1,16 @@
+export const WORDS = [
+  "COVES",
+  "ALBERTO",
+  "PABLO",
+  "MENDIOLA",
+  "MENDIOTA",
+  "MAIKEL",
+  "MARIOMIGUEL",
+  "JOSE",
+  "SERGIO",
+  "CICLOTE",
+  "CICLO",
+  "IVAN",
+  "ALVARO",
+  "INTANGCO",
+];
