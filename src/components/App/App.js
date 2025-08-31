@@ -13,7 +13,7 @@ import PixelCiclote from "../Games/PixelCiclote/PixelCiclote";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/CicloFutbol">
       <Stack sx={{ backgroundColor: "darkgray" }}>
         <Header />
         <Stack sx={{ flex: 1 }}>
