@@ -22,12 +22,12 @@
     "rimraf": "5.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "predev": "rimraf .parcel-cache dist",
-    "dev": "parcel public/index.html",
-    "build": "parcel build public/index.html",
-    "new-component": "new-component"
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "predev": "rimraf .parcel-cache dist",
+  "dev": "parcel public/index.html",
+  "build": "parcel build public/index.html",
+  "new-component": "new-component"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
