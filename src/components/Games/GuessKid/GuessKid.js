@@ -97,7 +97,15 @@ export default function GuessKid() {
   };
 
   const handleGuess = () => {
-    if (guess.toLowerCase() === currentQuestion.answer.toLowerCase()) {
+    // Helper to remove accents
+    const normalize = (str) => {
+      return str
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+    };
+
+    if (normalize(guess) === normalize(currentQuestion.answer)) {
       if (currentQuestionIndex === questions.length - 1) {
         setGameEnd(true);
       }

@@ -3,7 +3,7 @@ import { Box, Typography, Button, Paper } from "@mui/material";
 
 const pyramids = [
   {
-    title: "Viejunos",
+    title: "Más mayores",
     players: [
       { id: 1, name: "PJ", order: 1 },
       { id: 2, name: "IVÁN", order: 2 },
@@ -18,7 +18,7 @@ const pyramids = [
     ],
   },
   {
-    title: "Altura",
+    title: "Más altos",
     players: [
       { id: 1, name: "PABLO", order: 1 },
       { id: 2, name: "MAIKEL", order: 2 },

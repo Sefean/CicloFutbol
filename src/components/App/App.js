@@ -10,23 +10,26 @@ import Impostor from "../Games/Impostor/Impostor";
 import FootballGrid from "../Games/FootballGrid/FootballGrid";
 import GuessKid from "../Games/GuessKid/GuessKid";
 import PixelCiclote from "../Games/PixelCiclote/PixelCiclote";
+import Legacy from "../Games/Legacy/Legacy";
+
+const basename = process.env.NODE_ENV === "production" ? "/CicloFutbol" : "";
 
 export default function App() {
   return (
-    <Router basename="/CicloFutbol">
+    <Router basename={basename}>
       <Stack sx={{ backgroundColor: "darkgray" }}>
         <Header />
         <Stack sx={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<GameSelector />} />
             <Route element={<GameLayout />}>
+              <Route path="/pixelCiclote" element={<PixelCiclote />} />
+              <Route path="/guessKid" element={<GuessKid />} />
               <Route path="/wordle" element={<Wordle />} />
               <Route path="/pyramid" element={<Pyramid />} />
               <Route path="/impostor" element={<Impostor />} />
-              <Route path="/legacy" element={<div>Legacy</div>} />
+              <Route path="/legacy" element={<Legacy />} />
               <Route path="/footballGrid" element={<FootballGrid />} />
-              <Route path="/guessKid" element={<GuessKid />} />
-              <Route path="/pixelCiclote" element={<PixelCiclote />} />
             </Route>
           </Routes>
         </Stack>

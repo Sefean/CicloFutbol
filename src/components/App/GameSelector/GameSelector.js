@@ -5,11 +5,23 @@ import GameCard from "./GameCard/GameCard";
 import wordleImg from "../../../images/games/wordle.jpg";
 import pyramidImg from "../../../images/games/pyramid.jpg";
 import impostorImg from "../../../images/games/impostor.jpg";
-//import legacyImg from "../../../images/games/legacy.jpg";
+import legacyImg from "../../../images/games/legacy.jpg";
 import guessTheKidImg from "../../../images/players/kid/covesKid.jpg";
 import pixelCicloteImg from "../../../images/players/pixel/coves50.jpg";
 
 const games = [
+  {
+    title: "Guess the kid",
+    description: "¿Quién es este niño?",
+    imagesrc: guessTheKidImg,
+    to: "/guessKid",
+  },
+  {
+    title: "Pixel ciclote",
+    description: "¿Quién es este ciclote?",
+    imagesrc: pixelCicloteImg,
+    to: "/pixelCiclote",
+  },
   {
     title: "Wordle",
     description: "¡Adivina el jugador!",
@@ -28,23 +40,11 @@ const games = [
     imagesrc: impostorImg,
     to: "/impostor",
   },
-  // {
-  //   title: "Legacy",
-  //   description: "¡Encuentra al jugador!",
-  //   imagesrc: "/static/images/cards/legacy.jpg",
-  //   to: "/legacy",
-  // },
   {
-    title: "Guess the kid",
-    description: "¿Quién es este niño?",
-    imagesrc: guessTheKidImg,
-    to: "/guessKid",
-  },
-  {
-    title: "Pixel ciclote",
-    description: "¿Quién es este ciclote?",
-    imagesrc: pixelCicloteImg,
-    to: "/pixelCiclote",
+    title: "Legacy",
+    description: "¡Encuentra al jugador!",
+    imagesrc: legacyImg,
+    to: "/legacy",
   },
 ];
 
